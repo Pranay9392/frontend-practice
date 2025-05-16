@@ -4,6 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background-color: aqua;
+            gap: 10px;
+        }
+
+        .child{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            place-content: center;
+        }
+
+        .child1{
+            grid-column: span 4;
+        }
+
+        .child2{
+            grid-row:span 3
+        }
+
+        .child5{
+            grid-row: span 2;
+        }
+    </style>
 </head>
 <body>
 
@@ -25,13 +53,38 @@
 
 
 
-    <h1>flex box</h1>
 
-    <div style="display: flex;  background-color: yellow; border-color: red; border: 1px solid; height: 222px; width: 888px;">
+
+    
+    <h1>Grid box</h1>
+    <div style="display: grid; grid-template-columns: repeat(4,1fr); background-color: yellow; border-color: red; border: 1px solid; ">
         <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 1</div>
         <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 2</div>
         <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 3</div>
         <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 4</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 1</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 2</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 3</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 4</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 1</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 2</div>
+
+    </div>
+
+
+    <h1>flex box</h1>
+    <div style="display: flex; flex-wrap: 4;  background-color: yellow; border-color: red; border: 1px solid; ">
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 1</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 2</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 3</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 4</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 1</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 2</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 3</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 4</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 1</div>
+        <div style="background-color: pink; border: 1px solid blue; border-color: black; height: 200px; width: 200px; place-content: center; text-align: center; margin: 10px; ">child 2</div>
+
     </div>
 
     <h1>CSS</h1>
